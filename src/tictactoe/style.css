@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #0a2358;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  background-color: #fff;
+  font-weight: bold;
+}
+
+#menu a {
+  color: #0a2358;
+  padding: 10px 2rem;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  background-color: #eafa11;
+}
+
+#app {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+}
+
+#app span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#title {
+  color: #fff;
+}
+
+#data {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#data span {
+  display: flex;
+  flex-direction: column;
+}
+
+#scoreboard {
+  margin: 0;
+  color: #eafa11;
+  font-size: 40px;
+  font-weight: bolder;
+  white-space: nowrap;
+}
+
+input,
+select {
+  margin: 2px 0;
+  padding: 2px 0;
+}
+
+.player-color {
+  width: 165px;
+}
+
+label {
+  color: #fff;
+}
+
+#status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#tictactoe,
+.line,
+.box {
+  border: 3px solid black;
+}
+
+#tictactoe {
+  background-color: #000;
+}
+
+.box {
+  color: #0e1a83;
+  background-color: #fff;
+  font-size: 75px;
+  font-weight: bolder;
+  text-align: center;
+  width: 90px;
+  height: 90px;
+}
+
+.box:hover {
+  background-color: #ccc;
+}
+
+@media screen and (max-width: 1000px) {
+  #app {
+    flex-direction: column;
+  }
+
+  #app span {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GSP Games - Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../../assets/images/site.webmanifest" />
+  </head>
+  <body>
+    <div id="menu">
+      <a href="../tictactoe/index.html">#️⃣ TicTacToe</a>
+      <a href="#" onclick="alert('O jogo Chess ainda está em desenvolvimento')"
+        >♟️ Chess</a
+      >
+    </div>
+    <div id="app">
+      <span>
+        <h1 id="title">#️⃣ Tic Tac Toe #️⃣</h1>
+        <div id="data">
+          <span>
+            <input class="player" type="text" value="JogadorX" required />
+            <select
+              name="player-color"
+              id="player1-color"
+              class="player-color"
+              required
+            >
+              <option value="#000" selected disabled>⚫ Cor</option>
+              <option value="#F8312F">🔴 Vermelho</option>
+              <option value="#0D4E76">🔵 Azul</option>
+              <option value="#00D26A">🟢 Verde</option>
+              <option value="#FF6723">🟠 Laranja</option>
+              <option value="#8D65C5">🟣 Roxo</option>
+              <option value="#6D4534">🟤 Marrom</option>
+            </select>
+          </span>
+          <p id="scoreboard">0 x 0</p>
+          <span>
+            <input class="player" type="text" value="JogadorO" required />
+            <select
+              name="player-color"
+              id="player2-color"
+              class="player-color"
+              required
+            >
+              <option value="#000" selected disabled>⚫ Cor</option>
+              <option value="#F8312F">🔴 Vermelho</option>
+              <option value="#0D4E76">🔵 Azul</option>
+              <option value="#00D26A">🟢 Verde</option>
+              <option value="#FF6723">🟠 Laranja</option>
+              <option value="#8D65C5">🟣 Roxo</option>
+              <option value="#6D4534">🟤 Marrom</option>
+            </select>
+          </span>
+        </div>
+        <div>
+          <input type="checkbox" name="Bot" id="checkbox-bot" value="bot" />
+          <label for="checkbox-bot">Bot</label>
+        </div>
+      </span>
+      <span>
+        <p id="status">Clique em um quadrado para iniciar!</p>
+        <table id="tictactoe">
+          <tr class="line">
+            <td class="box" onclick="setMark(0)"></td>
+            <td class="box" onclick="setMark(1)"></td>
+            <td class="box" onclick="setMark(2)"></td>
+          </tr>
+          <tr class="line">
+            <td class="box" onclick="setMark(3)"></td>
+            <td class="box" onclick="setMark(4)"></td>
+            <td class="box" onclick="setMark(5)"></td>
+          </tr>
+          <tr class="line">
+            <td class="box" onclick="setMark(6)"></td>
+            <td class="box" onclick="setMark(7)"></td>
+            <td class="box" onclick="setMark(8)"></td>
+          </tr>
+        </table>
+      </span>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
